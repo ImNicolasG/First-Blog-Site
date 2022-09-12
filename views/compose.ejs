@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+
+<h1>Compose</h1>
+<!-- action=/compose so it posts on the compose page -->
+
+
+<form class="" action="/compose" method="post">
+    <div class="form-group">
+
+        <label for="Title" class="form-label">Title</label>
+        <input type="text" id="Title" class="form-control" name="postTitle" autocomplete="off">
+        
+        <label for="Content" class="form-label">Content</label>
+        <textarea id="Content" class="form-control" name="blogContent" rows="3"></textarea>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary" name="publish">Publish</button>
+    
+</form>
+
+<%- include("partials/footer"); -%>
